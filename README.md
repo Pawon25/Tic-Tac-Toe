@@ -1,4 +1,8 @@
-# Tic-Tac-Toe Game
+<h1> Tic-Tac-Toe Game </h1>
+
+<h2>
+        <a href="https://66d202b05429311817dc6634--vermillion-torte-56a5bb.netlify.app/">•PlayHere•</a>
+</h2>
 
 ## Introduction
 This project is a simple implementation of the classic Tic-Tac-Toe game using HTML, CSS, and JavaScript. The game is designed to be played between two players, X and O, and includes a score tracking system and a restart functionality.
@@ -32,16 +36,18 @@ This project is a simple implementation of the classic Tic-Tac-Toe game using HT
 3. Start playing the game by clicking on the grid squares.
 
 ## Gameplay
-The game grid is a 3x3 matrix, with each cell represented by a div element. Players take turns to click on the cells, with player O going first. The game logic ensures that players cannot overwrite a cell that has already been filled. 
+The game grid is a 3x3 matrix, with each cell represented by a div element. Players take turns to click on the cells, with player O going first. The game logic ensures that players cannot overwrite a cell that has already been filled.
+
+<img src="Images\WinningBoxes.png" alt="Image Showing Tic Tac Toe Tiles">
 
 ## Scoring System
 The game tracks the scores for both players. When a player wins, their score is incremented, and the winning combination is highlighted on the grid. The score is displayed next to the player's symbol (X or O) at the top of the game board.
 
+<img src="Images\Score Board.jpg" alt="" style="border: 5px solid black;">
+
 ## Restart Functionality
 The "Restart" button allows players to reset the game grid and start a new game. The matrix representing the game state is cleared, and the grid cells are emptied. The scores remain intact, allowing players to continue their series of games.
 
-## Future Enhancements
-- **AI Integration**: Implement a single-player mode where the player can compete against an AI.
-- **Mobile Responsiveness**: Improve the design to ensure it is fully responsive on mobile devices.
-- **Undo Functionality**: Add the ability for players to undo their last move.
-- **Enhanced UI**: Improve the overall design with animations and sound effects.
+<h6>Thank You(‾◡◝)</h6>
+
+<img src="Images\Full Screen.jpg" alt="" style="border: 5px solid black;">
