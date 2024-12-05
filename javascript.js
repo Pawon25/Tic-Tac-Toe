@@ -25,8 +25,31 @@ let clearbox=()=>{
     A31.textContent="";
     A32.textContent="";
     A33.textContent="";
+
+    for(let i=0;i<3;i++){
+        for(let j=0;j<3;j++){
+            matrix[i][j]="a";
+        }
+    }
 }
 clearbox();
+
+//Deals with the restrat button: Resets the matrix and style of the button
+let restrat=document.querySelector("#restrat");
+restrat.addEventListener("click",()=>{
+    console.log("CLicking restrat");
+    for(let i=0;i<3;i++){
+        for(let j=0;j<3;j++){
+            matrix[i][j]="a";
+        }
+    }
+    restrat.classList.add("restrat-clicked");
+    setTimeout(()=>{
+        restrat.classList.add("restrat");
+        restrat.classList.remove("restrat-clicked");
+        clearbox();
+    },500);
+})
 
 var X_Score=0;
 var Y_Score=0;
@@ -38,9 +61,11 @@ document.getElementById("ybox").innerText=Ytoshow;
 let update =(winner)=>{
     if(winner=="X"){
         X_Score=X_Score+1;
+        clearbox();
     }
     else if(winner=="O"){
         Y_Score=Y_Score+1;
+        clearbox();
     }
     Xtoshow= "X: "+X_Score;
     Ytoshow= "O: "+Y_Score;
@@ -335,19 +360,3 @@ A33.addEventListener("mouseout",()=>{
 })
 //////////////////////////////////////
 
-//Deals with the restrat button: Resets the matrix and style of the button
-let restrat=document.querySelector("#restrat");
-restrat.addEventListener("click",()=>{
-    console.log("CLicking restrat");
-    for(let i=0;i<3;i++){
-        for(let j=0;j<3;j++){
-            matrix[i][j]="a";
-        }
-    }
-    restrat.classList.add("restrat-clicked");
-    setTimeout(()=>{
-        restrat.classList.add("restrat");
-        restrat.classList.remove("restrat-clicked");
-        clearbox();
-    },500);
-})
