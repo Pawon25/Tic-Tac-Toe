@@ -1,7 +1,7 @@
 <h1> Tic-Tac-Toe Game </h1>
 
 <h2>
-        <a href="https://bright-mousse-5e4531.netlify.app/">•PlayHere•</a>
+        <a href="https://lucky-croquembouche-5b3580.netlify.app/">•PlayHere•</a>
 </h2>
 
 ## Introduction
